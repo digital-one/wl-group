@@ -1638,7 +1638,7 @@ section.banner {
 section.banner .image-square {
   display: block;
   background-color: #19629a;
-  width: 20%;
+  width: 25%;
   height: 50%;
   float: left;
   background-position: center center;
@@ -1648,10 +1648,16 @@ section.banner .image-square {
   -o-background-size: cover;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   /* line 110, ../sass/components/_global.scss */
   section.banner .image-square {
-    width: 25%;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1450px) {
+  /* line 110, ../sass/components/_global.scss */
+  section.banner .image-square {
+    width: 16.66%;
   }
 }
 @media screen and (max-width: 1020px) {
@@ -1667,19 +1673,19 @@ section.banner .image-square {
   }
 }
 
-/* line 128, ../sass/components/_global.scss */
+/* line 131, ../sass/components/_global.scss */
 section.content {
   height: 29%;
   position: relative;
   overflow: visible;
 }
 @media screen and (max-width: 660px) {
-  /* line 128, ../sass/components/_global.scss */
+  /* line 131, ../sass/components/_global.scss */
   section.content {
     height: auto;
   }
 }
-/* line 141, ../sass/components/_global.scss */
+/* line 144, ../sass/components/_global.scss */
 section.content .column-wrap {
   padding: 2% 3%;
   width: 100%;
@@ -1687,25 +1693,25 @@ section.content .column-wrap {
   display: block;
 }
 @media screen and (max-width: 1020px) {
-  /* line 141, ../sass/components/_global.scss */
+  /* line 144, ../sass/components/_global.scss */
   section.content .column-wrap {
     padding: 3%;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 141, ../sass/components/_global.scss */
+  /* line 144, ../sass/components/_global.scss */
   section.content .column-wrap {
     padding: 40px 5% 0;
   }
 }
-/* line 152, ../sass/components/_global.scss */
+/* line 155, ../sass/components/_global.scss */
 section.content .column-wrap div.column {
   display: block;
   height: 100%;
   float: left;
   width: 33.33%;
 }
-/* line 157, ../sass/components/_global.scss */
+/* line 160, ../sass/components/_global.scss */
 section.content .column-wrap div.column .inner {
   padding: 3% 5%;
   width: 100%;
@@ -1714,29 +1720,29 @@ section.content .column-wrap div.column .inner {
   height: 100%;
 }
 @media screen and (max-width: 1020px) {
-  /* line 157, ../sass/components/_global.scss */
+  /* line 160, ../sass/components/_global.scss */
   section.content .column-wrap div.column .inner {
     padding: 3% 8%;
   }
 }
-/* line 168, ../sass/components/_global.scss */
+/* line 171, ../sass/components/_global.scss */
 section.content .column-wrap div.column:first-child .inner {
   padding-left: 0;
   border: none;
 }
 @media screen and (max-width: 660px) {
-  /* line 168, ../sass/components/_global.scss */
+  /* line 171, ../sass/components/_global.scss */
   section.content .column-wrap div.column:first-child .inner {
     border-left: 1px solid rgba(255, 255, 255, 0.6);
     padding-left: 8%;
   }
 }
-/* line 178, ../sass/components/_global.scss */
+/* line 181, ../sass/components/_global.scss */
 section.content .column-wrap div.column:last-child .inner {
   padding-right: 0;
 }
 @media screen and (max-width: 660px) {
-  /* line 152, ../sass/components/_global.scss */
+  /* line 155, ../sass/components/_global.scss */
   section.content .column-wrap div.column {
     width: 100%;
     float: none;
@@ -1745,16 +1751,16 @@ section.content .column-wrap div.column:last-child .inner {
     height: auto;
   }
 }
-/* line 189, ../sass/components/_global.scss */
+/* line 192, ../sass/components/_global.scss */
 section.content .column-wrap div.column p {
   margin-bottom: 0;
 }
-/* line 194, ../sass/components/_global.scss */
+/* line 197, ../sass/components/_global.scss */
 .scrollable section.content {
   height: auto;
 }
 
-/* line 198, ../sass/components/_global.scss */
+/* line 201, ../sass/components/_global.scss */
 .button {
   height: 48px;
   line-height: 48px;
@@ -1770,7 +1776,7 @@ section.content .column-wrap div.column p {
   font-size: 1.6rem;
 }
 @media screen and (max-width: 1450px) {
-  /* line 198, ../sass/components/_global.scss */
+  /* line 201, ../sass/components/_global.scss */
   .button {
     font-size: 14px;
     font-size: 1.4rem;
@@ -1780,7 +1786,7 @@ section.content .column-wrap div.column p {
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 198, ../sass/components/_global.scss */
+  /* line 201, ../sass/components/_global.scss */
   .button {
     padding: 0 51px 0 15px;
     height: 40px;
@@ -1789,7 +1795,7 @@ section.content .column-wrap div.column p {
     font-size: 1.4rem;
   }
 }
-/* line 222, ../sass/components/_global.scss */
+/* line 225, ../sass/components/_global.scss */
 .caption .button {
   height: 66px;
   line-height: 66px;
@@ -1805,7 +1811,7 @@ section.content .column-wrap div.column p {
   filter: none;
 }
 @media screen and (max-width: 1450px) {
-  /* line 222, ../sass/components/_global.scss */
+  /* line 225, ../sass/components/_global.scss */
   .caption .button {
     height: 52px;
     line-height: 52px;
@@ -1813,7 +1819,7 @@ section.content .column-wrap div.column p {
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 222, ../sass/components/_global.scss */
+  /* line 225, ../sass/components/_global.scss */
   .caption .button {
     padding: 0 51px 0 15px;
     height: 40px;
@@ -1822,7 +1828,7 @@ section.content .column-wrap div.column p {
     font-size: 1.4rem;
   }
 }
-/* line 238, ../sass/components/_global.scss */
+/* line 241, ../sass/components/_global.scss */
 .caption .button:hover, .caption .button:active {
   background-color: black;
   background-color: transparent\9;
@@ -1834,16 +1840,16 @@ section.content .column-wrap div.column p {
 .caption .button:hover:nth-child(n), .caption .button:active:nth-child(n) {
   filter: none;
 }
-/* line 242, ../sass/components/_global.scss */
+/* line 245, ../sass/components/_global.scss */
 figcaption .button {
   font-size: 12px;
   font-size: 1.2rem;
 }
-/* line 244, ../sass/components/_global.scss */
+/* line 247, ../sass/components/_global.scss */
 figcaption .button:hover, figcaption .button:active {
   background-color: transparent;
 }
-/* line 248, ../sass/components/_global.scss */
+/* line 251, ../sass/components/_global.scss */
 .button:after {
   content: "";
   display: block;
@@ -1857,12 +1863,12 @@ figcaption .button:hover, figcaption .button:active {
   position: absolute;
   margin-top: -6px;
 }
-/* line 254, ../sass/components/_global.scss */
+/* line 257, ../sass/components/_global.scss */
 .enlightenment .button:after {
   background: none;
 }
 @media screen and (max-width: 660px) {
-  /* line 248, ../sass/components/_global.scss */
+  /* line 251, ../sass/components/_global.scss */
   .button:after {
     right: 11px;
     width: 30px;
@@ -1870,24 +1876,24 @@ figcaption .button:hover, figcaption .button:active {
     background-size: 30px 11px;
   }
 }
-/* line 266, ../sass/components/_global.scss */
+/* line 269, ../sass/components/_global.scss */
 .button:hover, .button:active {
   background-color: rgba(0, 0, 0, 0.15);
 }
-/* line 268, ../sass/components/_global.scss */
+/* line 271, ../sass/components/_global.scss */
 .enlightenment .button:hover, .enlightenment .button:active {
   background-color: white;
   border-color: black;
   color: black !important;
 }
-/* line 274, ../sass/components/_global.scss */
+/* line 277, ../sass/components/_global.scss */
 .enlightenment .button {
   border-color: #605959;
   color: #605959 !important;
   padding: 0 21px;
 }
 
-/* line 281, ../sass/components/_global.scss */
+/* line 284, ../sass/components/_global.scss */
 .underline:after {
   content: "";
   display: block;
@@ -1897,34 +1903,34 @@ figcaption .button:hover, figcaption .button:active {
   margin: 25px auto 0;
 }
 @media screen and (max-width: 1450px) {
-  /* line 281, ../sass/components/_global.scss */
+  /* line 284, ../sass/components/_global.scss */
   .underline:after {
     margin: 20px auto 0;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 281, ../sass/components/_global.scss */
+  /* line 284, ../sass/components/_global.scss */
   .underline:after {
     margin: 15px auto 0;
     width: 35px;
   }
 }
-/* line 295, ../sass/components/_global.scss */
+/* line 298, ../sass/components/_global.scss */
 .caption .underline:after {
   margin: 38px auto 40px;
 }
 @media screen and (max-width: 660px) {
-  /* line 295, ../sass/components/_global.scss */
+  /* line 298, ../sass/components/_global.scss */
   .caption .underline:after {
     margin: 25px auto 37px;
   }
 }
-/* line 301, ../sass/components/_global.scss */
+/* line 304, ../sass/components/_global.scss */
 .white .underline:after {
   background-color: #209dd5;
 }
 
-/* line 306, ../sass/components/_global.scss */
+/* line 309, ../sass/components/_global.scss */
 .tooltip-pointer {
   display: inline-block;
   z-index: 9999;
@@ -1945,7 +1951,7 @@ figcaption .button:hover, figcaption .button:active {
   left: 0;
   position: absolute;
 }
-/* line 320, ../sass/components/_global.scss */
+/* line 323, ../sass/components/_global.scss */
 .tooltip-pointer:after {
   content: "";
   width: 16px;
