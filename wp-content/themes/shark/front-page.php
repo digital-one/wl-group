@@ -21,8 +21,9 @@ endif;
     <!-- caption -->
     <div class="caption">
     	<div>
+    		<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/wl-group.svg" alt="<?php get_bloginfo('name'); ?>" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/images/wl-group.png'"  /></div>
     <h2 class="underline"><?php echo get_field('caption',$post->ID) ?></h2>
-    <a href="<?php echo home_url() ?>/#our-work" class="button"><?php echo get_field('button_label',$post->ID)?></a>
+    <a id="video-btn" class="button"><?php echo get_field('button_label',$post->ID)?></a>
 </div>
 </div>
 <!-- /caption -->

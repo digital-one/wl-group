@@ -1,7 +1,8 @@
 <?php 
 
-ini_set('zlib.output_handler', '');
-
+@ini_set( 'upload_max_size' , '65M' );
+@ini_set( 'post_max_size', '65M');
+@ini_set( 'max_execution_time', '300' );
 
 // load widgets
 get_template_part('widgets/widget_signpost');
@@ -19,7 +20,7 @@ get_template_part('widgets/widget_archive');
 
 // includes
 get_template_part('functions/sidebars');
-get_template_part('functions/options');
+//get_template_part('functions/options');
 get_template_part('functions/image-sizes');
 get_template_part('functions/menus');
 // get_template_part('functions/retina-images');
@@ -31,6 +32,44 @@ get_template_part('functions/shortcodes');
 
 add_editor_style('css/layout.css');
 add_editor_style('css/editor-style.css');
+
+
+
+
+
+if( function_exists('acf_add_options_sub_page') ) {
+  
+  acf_add_options_sub_page('General');
+  //acf_add_options_sub_page('Header');
+  //acf_add_options_sub_page('Footer');
+  
+}
+
+/*
+if( function_exists('acf_add_options_page') ) {
+  
+  acf_add_options_page(array(
+    'page_title'  => 'Theme General Settings',
+    'menu_title'  => 'Theme Settings',
+    'menu_slug'   => 'theme-general-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => true
+  ));
+  
+  acf_add_options_sub_page(array(
+    'page_title'  => 'Theme Header Settings',
+    'menu_title'  => 'Header',
+    'parent_slug' => 'theme-general-settings',
+  ));
+  
+  acf_add_options_sub_page(array(
+    'page_title'  => 'Theme Footer Settings',
+    'menu_title'  => 'Footer',
+    'parent_slug' => 'theme-general-settings',
+  ));
+  
+}
+*/
 
 //AJAX
 

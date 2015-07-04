@@ -16,7 +16,7 @@ add_image_size('portfolio-column-full-height', 840,1220, true);
 add_image_size('portfolio-column-full-height-tn', 200,290, true);
 add_image_size('portfolio-full-width', 1680,1680, false);
 add_image_size('portfolio-full-width-tn', 200,200, false);
-set_post_thumbnail_size( 150, 100,true); 
+set_post_thumbnail_size( 150, 150,false); 
 
 function custom_image_sizes($sizes) {
       unset( $sizes['medium']);

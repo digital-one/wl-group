@@ -511,6 +511,7 @@ nav.controls{
 		}
 	}
 }
+/*
 video {
   width: 100%    !important;
   height: auto   !important;
@@ -519,6 +520,7 @@ video {
   @include bg-cover;
   border:none;
 }
+*/
 a.video-control{
   	display: block;
   	@include transition(background-color 0.2s ease-in-out);

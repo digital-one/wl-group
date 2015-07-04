@@ -8,19 +8,29 @@
 </section> 
 <!-- /title -->
 <?php
-list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'page-letterbox-image');
+list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full');
 //$src = getRetinaSrc($src);
 ?>
 <!-- banner -->
 <section class="banner">
 	<?php
+
 	if(get_field('image_grid')):
+		$c=1;
 while(the_repeater_field('image_grid')): 
+	$class="";
+	if($c>6) $class=' medium-up';
+	if($c>10) $class=' medium-up large-up';
+	if($c>12) $class=' medium-up large-up xlarge-up';
 list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('image'), 'full');
 ?>
-<div class="image-square" style="background-image:url('<?php echo $src ?>');"></div>
-<?php endwhile;
+<div class="grid-square<?php echo $class ?>"><div class="inner-wrap"><img src="<?php echo $src ?>" /></div></div>
+
+<?php
+$c++;
+endwhile;
 endif;
+
 ?>
 </section>   
 <!-- /banner -->
@@ -31,7 +41,7 @@ endif;
 if(get_field('columns',$post->ID)):
 while(the_repeater_field('columns',$post->ID)): 
 ?>
-<div class="column"><div class="inner"><h3><?php echo get_sub_field('column_heading') ?></h3><?php echo do_shortcode(get_sub_field('column_content')) ?></div></div>
+<div class="column"><div class="inner"><h3><?php echo get_sub_field('column_heading') ?></h3><p><?php echo do_shortcode(get_sub_field('column_content')) ?></p></div></div>
 <?php endwhile; ?>
 <?php endif; ?>
 </div></section>

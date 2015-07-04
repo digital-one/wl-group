@@ -25,6 +25,7 @@
         <?php wp_head() ?>
     </head>
     <body>
+        
         <div id="page-wrap-outer">
     <div id="page-wrap" class="page-wrap" <?php if(is_single()): ?> class="show-controls"<?php endif ?>> 
    <a id="top"></a>

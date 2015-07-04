@@ -13,14 +13,12 @@ html{
 }
 body{
 	font-family: $gibson-regular;
-	@include font-size(15);
+	
+	@include font-size(14);
 	line-height:130%;
-
-	@media screen and (max-width: $break-xlarge){
-		@include font-size(14);
-	}
-	@media screen and (max-width: $break-large){
-		@include font-size(13);
+	-webkit-font-smoothing: antialiased;
+	@media screen and (min-width: $break-xlarge+1){
+		@include font-size(16);
 	}
 	@media screen and (max-width: $break-medium){
 		@include font-size(12);

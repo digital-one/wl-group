@@ -27,7 +27,7 @@ $(function(){
 var isMobile = $(window).width() <= 660,
 	isTablet = $(window).width() > 660 && $(window).width() <= 1020,
 	isDesktop = $(window).width() > 1020,
-	isHiResDesktop = $(window).width() > 1450,
+	isHiResDesktop = $(window).width() > 1650,
 	$fullPageActive = false,
 	$initFullPageJS = false,
 	$scrollbarActive = false,
@@ -59,6 +59,40 @@ var isMobile = $(window).width() <= 660,
 //$(window).on('scroll',function(){
 	//$('#header').height($(window).height());
 //});
+
+
+
+
+//------------- Image Grid Sizing -------------
+
+refreshGrid = function(){
+	if(!isMobile){
+	var _gridHeight = $('.banner').height(),
+		_titleHeight = $('.page-title').height(),
+		_contentHeight = $('.content').height(),
+		_windowWidth = $(window).width(),
+		_windowHeight = $(window).height(),
+		_diff = (_windowHeight - _gridHeight)/2;
+		$('.page-title').css({
+			height:_diff+'px'
+		})
+		if(_windowWidth>1019){
+	$('.page-title, .content').css({
+		'height':_diff+'px'
+	})
+} else {
+	$('.page-title').css({
+		'height':(_diff+35)+'px'
+	})
+	$('.content').css({
+		'height':(_diff-35)+'px'
+	})
+}
+}
+}
+refreshGrid();
+$(window).on('resize',refreshGrid);
+
 
 //------------- Parallax -------------
 
@@ -467,6 +501,7 @@ destroyDesktopMenu();
 	$('#nav ul a').not('#nav.single ul a').on('click',mobileNavClickAction);
 
 
+/*
 if(isMobile){
 $('body').on('click','.caption .button',function(e){
 	//e.preventDefault();
@@ -480,16 +515,16 @@ $('body').on('click','.caption .button',function(e){
 
       
 document.body.scrollTop = top;
-              /*
+             
 
 	$.scrollTo( $anchor, animationSpeed, {
           easing: 'easeInOutExpo',
           offset: $offset
         });
-*/
+
 })
 }
-
+*/
 
 
 
@@ -550,14 +585,14 @@ if(push && $historyActive){
 	// updateHashMenuState();
 	}
 showOverlay('true');
-	if(location.pathname=='/' || location.pathname=='/~sharkdesignco/') url=null
+	if(location.pathname=='/' || location.pathname=='/~wlgroupco/') url=null
 
 	$singlePage=false;
 	isHome = false;
 
 	if(url==null){ //on homepage
 		isHome = true;
-		$('#home-link').fadeIn(200,"easeInQuad");
+		//$('#home-link').fadeIn(200,"easeInQuad");
 		$('#nav ul li:first').addClass('current-menu-item');
 		$('#nav').removeClass("single");
 		if($homeLoaded){
@@ -599,7 +634,7 @@ showOverlay('true');
 	 	$('#nav').addClass('single');
 	 	//load only the requested url (not homepage)
 	 	//if(console) console.log('single page')
-	 	$('#home-link').fadeOut(200,"easeOutQuad");
+	 	//$('#home-link').fadeOut(200,"easeOutQuad");
 	 	$singlePage=true;
 	 	if(!$firstLoad){  //if single page and not first load, get page
 	 	$totalPages=1;
@@ -888,7 +923,7 @@ $('main').attr('id','fullpage');
 		scrollOverflow: false,
 		paddingTop: '0',
 		paddingBottom: '0',
-		normalScrollElements: '#header',
+		//normalScrollElements: '#header',
 		fixedElements: '#header,#featured-work,#sectors',
 		normalScrollElementTouchThreshold: 10,
 		keyboardScrolling: true,
@@ -899,6 +934,15 @@ $('main').attr('id','fullpage');
     		onLeave: function(index, nextIndex, direction){
          	changeMenuState(nextIndex);
          	if(index!=3) resetSectorMenu(false);
+         	if(index==1 && nextIndex>1 ){
+         		setTimeout(function(){
+  					$('#home-link').fadeIn(100)
+				}, 500);
+         		
+         	}
+         	if(index>1 && nextIndex==1){
+         		$('#home-link').fadeOut(100);
+         	}
          	
          	},
          	 afterResize: function(){
@@ -908,12 +952,15 @@ $('main').attr('id','fullpage');
             	//if(console) console.log("The sections have finished resizing");
         },
          	afterRender: function(){
-         		
+         		refreshGrid();
          		initPageScripts();
          		rebuildFullPage();
          		$fullPageActive = true;
          		scrollToAnchorPage();
          		$('#overlay').remove();
+         		if(location.hash && location.hash!='#home'){
+         			$('#home-link').show();
+         		}
          		preloadImages(showContent);
          		//showContent();
          		/*
@@ -1006,7 +1053,7 @@ destroyHistoryActions = function(){
 
 
 convertNavLinksToHash = function(){
-  var $links = $('#nav a').not('#nav a:first');
+  var $links = $('#nav a').not('#nav a:first').not('#nav a.download-link');
     $links.each(function(){
     var $href = $(this).attr('href');
     //remove trailing slash
@@ -1195,7 +1242,7 @@ refreshPage = function(){
 	isMobile = $(window).width() <= 660;
 	isTablet = $(window).width() > 660 && $(window).width() <= 1020;
 	isDesktop = $(window).width() > 1020;
-	isHiResDesktop = $(window).width() > 1450;
+	isHiResDesktop = $(window).width() > 1650;
 	$historyActive = !isMobile && Modernizr.history;
 
 	$.fn.fullpage.setScrollingSpeed(0);
@@ -1223,12 +1270,38 @@ refreshPage = function(){
 
 }
 
+initVideoOverlay = function() {
+   var _mediaPlayer = document.getElementById('wl-video'),
+   	   _btn = $('a#video-btn'),
+   	   _closeBtn = $('#video-close'),
+   	   _overlay = $('#video-overlay');
+   
+   	   $('body').on('click','#video-btn',function(e){
+
+   	   	e.preventDefault();
+   	   _overlay.show();
+   	   	_mediaPlayer.play();
+   	   })
+
+   	    $('body').on('click','#video-close',function(e){
+   	   	e.preventDefault();
+   	   	_mediaPlayer.pause();
+   		 _mediaPlayer.currentTime = '0';
+   		 _overlay.hide();
+   	   })
+   	}
+initVideoOverlay();
+
 initPage();
 $(window).on('resize',refreshPage);
 
 
 
 
-
-
 }) 	//end on document load
+
+$(window).on('load',function(){
+
+
+
+})

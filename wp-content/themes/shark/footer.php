@@ -1,6 +1,19 @@
 </main> <!--/main-->
 </div><!-- /page wrap -->
 </div> 
+<div id="video-overlay">
+	<a id="video-close">Close</a>
+	<div class="video-container">
+
+  <video id="wl-video" loop="true" preload="none" controls >
+            <source src="<?php echo get_template_directory_uri(); ?>/video/shark.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+            <source src="<?php echo get_template_directory_uri(); ?>/video/shark.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+
+          
+        </video>
+
+</div>
+</div>
 <?php if(is_front_page()):?><div id="preloader-screen"><span id="logo" class="pulse">Shark Design &amp; Marketing</span></div> <?php endif ?>
 <!--scripts-->
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>

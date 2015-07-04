@@ -40,6 +40,7 @@
 		display: block;
 		position: relative;
 		z-index: 997;
+		@include bg-cover;
 		@media screen and (min-width: $break-small+1){
 			padding-top:70px;
 		}
@@ -95,11 +96,12 @@
 		span{
 			//@include vertical-align;
 			width: 115px;
-			height: 77px;
+			height: 115px;
 			display: inline-block;
-			margin:-38px 0 0 -57px;
+			margin:-58px 0 0 -57px;
 			@include abs-pos(50%,auto,auto,50%);
-			background:url('../images/shark.svg') left top no-repeat;
+			background:url('../images/wl-group.png') left top no-repeat;
+			
 			background-size: 100% auto;
 			-webkit-animation-duration: 1s; 
     		animation-duration: 1s; 
