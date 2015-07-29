@@ -20,7 +20,7 @@ list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
 		$c=1;
 while(the_repeater_field('image_grid')): 
 	$class="";
-	if($c>6) $class=' medium-up';
+	if($c>8) $class=' medium-up';
 	if($c>10) $class=' medium-up large-up';
 	if($c>12) $class=' medium-up large-up xlarge-up';
 list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('image'), 'full');
@@ -42,7 +42,15 @@ endif;
 if(get_field('columns',$post->ID)):
 while(the_repeater_field('columns',$post->ID)): 
 ?>
-<div class="column"><a href="http://<?php echo get_sub_field('column_logo_url') ?>" target="_blank" class="inner">
+<div class="column">
+<?php
+$url = get_sub_field('column_logo_url');
+if(!empty($url)):?>
+<a href="http://<?php echo $url ?>" target="_blank" class="inner">
+<?php else: ?>
+<div class="inner">
+<?php endif ?>
+		<div class="vcenter">
 	<?php if(get_sub_field('column_heading')): ?>
 	<h3><?php echo get_sub_field('column_heading') ?></h3>
 <?php endif ?>
@@ -55,7 +63,12 @@ while(the_repeater_field('columns',$post->ID)):
 	<figure class="logo"><img src="<?php echo $svg_src ?>" alt="<?php echo $alt ?>" onerror="this.onerror=null; this.src='<?php echo $png_src ?>'" /></figure>
 <?php endif ?>
 	<p><?php echo do_shortcode(get_sub_field('column_content')) ?></p>
+</div>
+<?php if(!empty($url)):?>
 </a>
+<?php else: ?>
+</div>
+<?php endif; ?>
 </div>
 <?php endwhile; ?>
 <?php endif; ?>

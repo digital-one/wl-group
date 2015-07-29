@@ -3,9 +3,11 @@
 </div> 
 <div id="video-overlay">
 	<a id="video-close">Close</a>
+  <a href="#" id="video-play">Play/Pause</a>
+  <a href="#" id="video-rewind">Rewind</a>
 	<div class="video-container">
 
-  <video id="wl-video" loop="true" preload="none" controls >
+  <video id="wl-video" loop="true" preload="none" >
             <source src="<?php echo get_template_directory_uri(); ?>/video/shark.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
             <source src="<?php echo get_template_directory_uri(); ?>/video/shark.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
 
@@ -36,7 +38,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-2334835-8', 'auto');
+  ga('create', 'UA-2334835-26', 'auto');
   ga('send', 'pageview');
 
 </script>

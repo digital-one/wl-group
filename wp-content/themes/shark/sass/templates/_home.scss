@@ -103,9 +103,9 @@ a.scroll{
 	display: none;
 	top:0;
 	left:0;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.9);
 	z-index:9999;
-	a#video-close{
+	a#video-close,a#video-play,a#video-rewind{
 		@include abs-pos(15px,15px,auto,auto);
 		z-index: 9999;
 		display: block;
@@ -118,16 +118,30 @@ a.scroll{
 		cursor: pointer;
 		background-image:url('../images/close-btn.png');
 		background-position: center center;
+		background-size:19px 19px;
+		@include transition(none);
 		background-repeat: no-repeat;
 		@extend %ir;
+	}
+	a#video-play,a#video-rewind{
+		@include abs-pos(15px,80px,auto,auto);
+		background-image:url('../images/play-pause-btn.png');
+		background-size: auto 100%;
+		background-position: left top;
+		&.pause{
+			background-position: right top;
+		}
+	}
+	a#video-rewind{
+		@include abs-pos(15px,145px,auto,auto);
+		background-image:url('../images/rewind-btn.png');
 	}
 	.video-container{
     	position:absolute;
     	height:100%;
     	width:100%;
-    	left:0;
-    	top:0;
     	overflow: hidden;
+    	//overflow: hidden;
     	@media screen and (max-width: $break-medium){
     		height:100%;
     		&:before {
@@ -140,18 +154,20 @@ a.scroll{
     	}
     	video{
     		position: fixed;
-  			top: 50%; left: 50%;
+    		top:0;
+    		left:0;
+  			//top: 50%; left: 50%;
   			z-index: 1;
   			min-width: 100%;
   			min-height: 100%;
  			width: auto;
   			height: auto;
-  			transform: translate(-50%, -50%);
+  			//transform: translate(-50%, -50%);
     		@media screen and (max-width: $break-medium){
     			height:450px;
-    			min-width:0;
-    			min-height: 0;
-    			width:98%;
+    			//min-width:0;
+    			//min-height: 0;
+    			width:100%;
     			vertical-align:middle
     		}
 

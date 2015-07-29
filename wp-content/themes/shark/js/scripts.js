@@ -37,6 +37,7 @@ var isMobile = $(window).width() <= 660,
 	$loadedPages = 0,
 	$totalPages = 0,
 	$pages=[],
+	$root='http://92.60.114.159/~wlgroupco',
 	$singlePage=false,
 	$firstLoad=true,
 	$homeLoaded=false,
@@ -61,7 +62,20 @@ var isMobile = $(window).width() <= 660,
 //});
 
 
-
+//var video = $('#wl-video').get(0);
+ var video = document.getElementById('wl-video');
+ $('#video-play').addClass('pause');
+$('#video-play').on('click', function() {
+    if(video.paused) {
+        video.play();
+        $(this).removeClass('play').addClass('pause');
+    }
+    else {
+        video.pause()
+        $(this).removeClass('pause').addClass('play');
+    }
+    return false;
+});
 
 //------------- Image Grid Sizing -------------
 
@@ -88,6 +102,14 @@ refreshGrid = function(){
 		'height':(_diff-35)+'px'
 	})
 }
+var contentHeight = $('.content .inner').height();
+var centerElms = $('.what-we-do .vcenter');
+centerElms.each(function(){
+	var thisHeight = $(this).height();
+	$(this).css({
+		'padding-top': (contentHeight-thisHeight)/2-10 + 'px'
+	})
+})
 }
 }
 refreshGrid();
@@ -801,7 +823,14 @@ initPageScripts = function(){
 	initMap(); //init map
 	if(isMobile && location.hash){
 	var _hash = location.hash;
-	location.href= '/'+_hash;
+	var animationSpeed = 200;
+		var $offset =-70;
+		var $anchor = _hash;
+		$.scrollTo( $anchor, animationSpeed, {
+          easing: 'easeInOutExpo',
+          offset: $offset
+        });
+	//location.href= $root+'/'+_hash;
 	}
 	if($('#enlightenment-page').length){
 	if(!isMobile && !isIE9){
@@ -1211,6 +1240,28 @@ switchAccordion = function(){
 	}
 }
 
+scrollTo = function(e){
+	e.preventDefault();
+		var _this = e.currentTarget;
+		var _urlSegments = $(_this).attr('href').split('/');
+		var _hash = _urlSegments[_urlSegments.length-1];
+		var animationSpeed = 200;
+		var $offset =-70;
+		var $anchor = _hash;
+		$.scrollTo( $anchor, animationSpeed, {
+          easing: 'easeInOutExpo',
+          offset: $offset
+        });
+}
+
+initScrollTo = function(){
+		//e.preventDefault();
+	$('body').on('click','#nav a',scrollTo);
+}
+destroyScrollTo = function(){
+	$('body').off('click','#nav a', scrollTo);
+}
+
 initPage = function(){
 
 	loadContent(location.href, true); 
@@ -1220,8 +1271,10 @@ initPage = function(){
 	}
 	if(!isMobile){ //what we do panel
 		activateSectorClick();
+		destroyScrollTo();
 	} else {
 		activateMobileSectorClick();
+		initScrollTo();
 	}
 	switchMenu();
 	switchAccordion();
@@ -1281,6 +1334,12 @@ initVideoOverlay = function() {
    	   	e.preventDefault();
    	   _overlay.show();
    	   	_mediaPlayer.play();
+   	   })
+
+   	   $('body').on('click','#video-rewind',function(e){
+   	   	 _mediaPlayer.pause();
+    	_mediaPlayer.currentTime = '0';
+   		 _mediaPlayer.play();
    	   })
 
    	    $('body').on('click','#video-close',function(e){

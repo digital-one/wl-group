@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"text-align"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"_wi",
+				"_windowWidth"
+			],
+			[
 				"val",
 				"validation_message"
 			],
@@ -80,10 +96,6 @@
 				"padding-top"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
 				"bac",
 				"background-position"
 			],
@@ -118,10 +130,6 @@
 			[
 				"menu",
 				"menu-item-has-children"
-			],
-			[
-				"backg",
-				"background-color"
 			],
 			[
 				"pro",
@@ -166,10 +174,6 @@
 			[
 				"current-",
 				"current-menu-item"
-			],
-			[
-				"te",
-				"text-transform"
 			],
 			[
 				"max",
@@ -510,15 +514,116 @@
 			[
 				"slide",
 				"slide-title"
-			],
-			[
-				"slides_co",
-				"slides_count"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "wp-config.php",
+			"settings":
+			{
+				"buffer_size": 3354,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/template-what-we-do.php",
+			"settings":
+			{
+				"buffer_size": 2237,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/components/_global.scss",
+			"settings":
+			{
+				"buffer_size": 8722,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 32260,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 3651,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/_base.scss",
+			"settings":
+			{
+				"buffer_size": 525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/templates/_home.scss",
+			"settings":
+			{
+				"buffer_size": 3738,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/page.php",
+			"settings":
+			{
+				"buffer_size": 1525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wlgroup.sql",
+			"settings":
+			{
+				"buffer_size": 722794,
+				"line_ending": "Unix",
+				"name": "-- phpMyAdmin SQL Dump"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/footer.php",
+			"settings":
+			{
+				"buffer_size": 2351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/front-page.php",
+			"settings":
+			{
+				"buffer_size": 1204,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/template-enlightenment.php",
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -548,6 +653,8 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/wl_group/wp-content/themes/shark/images/play-pause-btn.png",
+		"/Applications/MAMP/htdocs/ama/cranford_group/cranfordgroup.sql",
 		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/js/scripts.js",
 		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/includes/functions.php",
 		"/Applications/MAMP/htdocs/projects/sass/templates/_all.scss",
@@ -673,9 +780,7 @@
 		"/Applications/MAMP/htdocs/ama/pagets/wp-content/themes/pagets/sass/components/_header.scss",
 		"/Applications/MAMP/htdocs/ama/pagets/wp-content/themes/pagets/sass/templates/_news-events.scss",
 		"/Applications/MAMP/htdocs/ama/pagets/wp-content/themes/pagets/single-people.php",
-		"/Applications/MAMP/htdocs/ama/pagets/wp-content/themes/pagets/single-news.php",
-		"/Applications/MAMP/htdocs/ama/pagets/wp-content/themes/pagets/sass/components/_navigation.scss",
-		"/Applications/MAMP/htdocs/ama/pagets/wp-content/themes/pagets/sass/templates/_home.scss"
+		"/Applications/MAMP/htdocs/ama/pagets/wp-content/themes/pagets/single-news.php"
 	],
 	"find":
 	{
@@ -696,6 +801,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"play",
+			"initPageScripts",
+			"Accordion",
+			"isMobile",
+			"home-link",
+			"hash",
+			"~",
+			"http://www.wlgroup.co.uk",
+			"home-link",
 			"scrollTo",
 			".bg",
 			"bg",
@@ -814,16 +928,7 @@
 			"$menuParentLinks",
 			"mobile-prev",
 			"sub-menu",
-			"$menuParentLinks",
-			"sub-menu",
-			"menu-item-has-children",
-			"$menuParentLinks",
-			"sub-menu",
-			"aside",
-			"image",
-			"http://pagets.localhost",
-			"carousel",
-			"button"
+			"$menuParentLinks"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -969,8 +1074,1290 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "wp-config.php",
+					"settings":
+					{
+						"buffer_size": 3354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3086,
+								3086
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 221.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/shark/template-what-we-do.php",
+					"settings":
+					{
+						"buffer_size": 2237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2126,
+								2126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/shark/sass/components/_global.scss",
+					"settings":
+					{
+						"buffer_size": 8722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5708,
+								5708
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3781.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/shark/js/scripts.js",
+					"settings":
+					{
+						"buffer_size": 32260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31897,
+								31897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 19291.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/shark/sass/_variables.scss",
+					"settings":
+					{
+						"buffer_size": 3651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								460,
+								460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 251.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/shark/sass/_base.scss",
+					"settings":
+					{
+						"buffer_size": 525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								410,
+								410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/shark/sass/templates/_home.scss",
+					"settings":
+					{
+						"buffer_size": 3738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2835,
+								2835
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1265.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/shark/page.php",
+					"settings":
+					{
+						"buffer_size": 1525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								702,
+								702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wlgroup.sql",
+					"settings":
+					{
+						"buffer_size": 722794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3630,
+								3630
+							],
+							[
+								5321,
+								5321
+							],
+							[
+								49025,
+								49025
+							],
+							[
+								49155,
+								49155
+							],
+							[
+								49285,
+								49285
+							],
+							[
+								49424,
+								49424
+							],
+							[
+								49561,
+								49561
+							],
+							[
+								49695,
+								49695
+							],
+							[
+								49829,
+								49829
+							],
+							[
+								49977,
+								49977
+							],
+							[
+								50540,
+								50540
+							],
+							[
+								50746,
+								50746
+							],
+							[
+								50952,
+								50952
+							],
+							[
+								51158,
+								51158
+							],
+							[
+								51366,
+								51366
+							],
+							[
+								51959,
+								51959
+							],
+							[
+								52599,
+								52599
+							],
+							[
+								53349,
+								53349
+							],
+							[
+								53546,
+								53546
+							],
+							[
+								53773,
+								53773
+							],
+							[
+								53981,
+								53981
+							],
+							[
+								54203,
+								54203
+							],
+							[
+								54432,
+								54432
+							],
+							[
+								54640,
+								54640
+							],
+							[
+								54862,
+								54862
+							],
+							[
+								55091,
+								55091
+							],
+							[
+								55299,
+								55299
+							],
+							[
+								55528,
+								55528
+							],
+							[
+								55736,
+								55736
+							],
+							[
+								55958,
+								55958
+							],
+							[
+								56180,
+								56180
+							],
+							[
+								56409,
+								56409
+							],
+							[
+								56617,
+								56617
+							],
+							[
+								56847,
+								56847
+							],
+							[
+								57055,
+								57055
+							],
+							[
+								57720,
+								57720
+							],
+							[
+								57893,
+								57893
+							],
+							[
+								58086,
+								58086
+							],
+							[
+								58280,
+								58280
+							],
+							[
+								58473,
+								58473
+							],
+							[
+								59123,
+								59123
+							],
+							[
+								59319,
+								59319
+							],
+							[
+								59543,
+								59543
+							],
+							[
+								59763,
+								59763
+							],
+							[
+								59990,
+								59990
+							],
+							[
+								60188,
+								60188
+							],
+							[
+								60406,
+								60406
+							],
+							[
+								60630,
+								60630
+							],
+							[
+								60832,
+								60832
+							],
+							[
+								61055,
+								61055
+							],
+							[
+								463870,
+								463870
+							],
+							[
+								464028,
+								464028
+							],
+							[
+								655361,
+								655361
+							],
+							[
+								655596,
+								655596
+							],
+							[
+								655839,
+								655839
+							],
+							[
+								656083,
+								656083
+							],
+							[
+								656332,
+								656332
+							],
+							[
+								656576,
+								656576
+							],
+							[
+								656825,
+								656825
+							],
+							[
+								657090,
+								657090
+							],
+							[
+								657347,
+								657347
+							],
+							[
+								657622,
+								657622
+							],
+							[
+								657919,
+								657919
+							],
+							[
+								658194,
+								658194
+							],
+							[
+								658503,
+								658503
+							],
+							[
+								658800,
+								658800
+							],
+							[
+								659066,
+								659066
+							],
+							[
+								659318,
+								659318
+							],
+							[
+								659552,
+								659552
+							],
+							[
+								659815,
+								659815
+							],
+							[
+								660087,
+								660087
+							],
+							[
+								660390,
+								660390
+							],
+							[
+								660662,
+								660662
+							],
+							[
+								660943,
+								660943
+							],
+							[
+								661206,
+								661206
+							],
+							[
+								661478,
+								661478
+							],
+							[
+								661789,
+								661789
+							],
+							[
+								662067,
+								662067
+							],
+							[
+								662375,
+								662375
+							],
+							[
+								662675,
+								662675
+							],
+							[
+								662998,
+								662998
+							],
+							[
+								663321,
+								663321
+							],
+							[
+								663646,
+								663646
+							],
+							[
+								663942,
+								663942
+							],
+							[
+								664252,
+								664252
+							],
+							[
+								664550,
+								664550
+							],
+							[
+								664845,
+								664845
+							],
+							[
+								665111,
+								665111
+							],
+							[
+								665393,
+								665393
+							],
+							[
+								665697,
+								665697
+							],
+							[
+								666019,
+								666019
+							],
+							[
+								666322,
+								666322
+							],
+							[
+								666613,
+								666613
+							],
+							[
+								666928,
+								666928
+							],
+							[
+								667204,
+								667204
+							],
+							[
+								667491,
+								667491
+							],
+							[
+								667811,
+								667811
+							],
+							[
+								668092,
+								668092
+							],
+							[
+								668413,
+								668413
+							],
+							[
+								668717,
+								668717
+							],
+							[
+								669065,
+								669065
+							],
+							[
+								669409,
+								669409
+							],
+							[
+								669727,
+								669727
+							],
+							[
+								670023,
+								670023
+							],
+							[
+								670363,
+								670363
+							],
+							[
+								670699,
+								670699
+							],
+							[
+								671013,
+								671013
+							],
+							[
+								671311,
+								671311
+							],
+							[
+								671638,
+								671638
+							],
+							[
+								671959,
+								671959
+							],
+							[
+								672289,
+								672289
+							],
+							[
+								672609,
+								672609
+							],
+							[
+								672874,
+								672874
+							],
+							[
+								673293,
+								673293
+							],
+							[
+								673589,
+								673589
+							],
+							[
+								673904,
+								673904
+							],
+							[
+								674219,
+								674219
+							],
+							[
+								674671,
+								674671
+							],
+							[
+								675104,
+								675104
+							],
+							[
+								675537,
+								675537
+							],
+							[
+								675970,
+								675970
+							],
+							[
+								676403,
+								676403
+							],
+							[
+								676819,
+								676819
+							],
+							[
+								677115,
+								677115
+							],
+							[
+								677400,
+								677400
+							],
+							[
+								677650,
+								677650
+							],
+							[
+								677940,
+								677940
+							],
+							[
+								678207,
+								678207
+							],
+							[
+								678480,
+								678480
+							],
+							[
+								678748,
+								678748
+							],
+							[
+								679045,
+								679045
+							],
+							[
+								679449,
+								679449
+							],
+							[
+								679882,
+								679882
+							],
+							[
+								680316,
+								680316
+							],
+							[
+								680750,
+								680750
+							],
+							[
+								681039,
+								681039
+							],
+							[
+								681327,
+								681327
+							],
+							[
+								681620,
+								681620
+							],
+							[
+								681922,
+								681922
+							],
+							[
+								682227,
+								682227
+							],
+							[
+								682522,
+								682522
+							],
+							[
+								682794,
+								682794
+							],
+							[
+								683087,
+								683087
+							],
+							[
+								683354,
+								683354
+							],
+							[
+								683627,
+								683627
+							],
+							[
+								683900,
+								683900
+							],
+							[
+								684178,
+								684178
+							],
+							[
+								684440,
+								684440
+							],
+							[
+								684735,
+								684735
+							],
+							[
+								685030,
+								685030
+							],
+							[
+								685325,
+								685325
+							],
+							[
+								685620,
+								685620
+							],
+							[
+								685917,
+								685917
+							],
+							[
+								686215,
+								686215
+							],
+							[
+								686513,
+								686513
+							],
+							[
+								686809,
+								686809
+							],
+							[
+								687104,
+								687104
+							],
+							[
+								687399,
+								687399
+							],
+							[
+								687694,
+								687694
+							],
+							[
+								687992,
+								687992
+							],
+							[
+								688265,
+								688265
+							],
+							[
+								688535,
+								688535
+							],
+							[
+								688830,
+								688830
+							],
+							[
+								689125,
+								689125
+							],
+							[
+								689420,
+								689420
+							],
+							[
+								689715,
+								689715
+							],
+							[
+								690010,
+								690010
+							],
+							[
+								690305,
+								690305
+							],
+							[
+								690600,
+								690600
+							],
+							[
+								690895,
+								690895
+							],
+							[
+								691192,
+								691192
+							],
+							[
+								691490,
+								691490
+							],
+							[
+								691788,
+								691788
+							],
+							[
+								692087,
+								692087
+							],
+							[
+								692360,
+								692360
+							],
+							[
+								692633,
+								692633
+							],
+							[
+								692906,
+								692906
+							],
+							[
+								693179,
+								693179
+							],
+							[
+								693447,
+								693447
+							],
+							[
+								693746,
+								693746
+							],
+							[
+								694004,
+								694004
+							],
+							[
+								694298,
+								694298
+							],
+							[
+								694558,
+								694558
+							],
+							[
+								694839,
+								694839
+							],
+							[
+								695120,
+								695120
+							],
+							[
+								695414,
+								695414
+							],
+							[
+								695670,
+								695670
+							],
+							[
+								695953,
+								695953
+							],
+							[
+								696231,
+								696231
+							],
+							[
+								696521,
+								696521
+							],
+							[
+								696794,
+								696794
+							],
+							[
+								697067,
+								697067
+							],
+							[
+								697339,
+								697339
+							],
+							[
+								697605,
+								697605
+							],
+							[
+								697864,
+								697864
+							],
+							[
+								698137,
+								698137
+							],
+							[
+								698440,
+								698440
+							],
+							[
+								698737,
+								698737
+							],
+							[
+								699046,
+								699046
+							],
+							[
+								699362,
+								699362
+							],
+							[
+								699657,
+								699657
+							],
+							[
+								699904,
+								699904
+							],
+							[
+								700162,
+								700162
+							],
+							[
+								700438,
+								700438
+							],
+							[
+								700718,
+								700718
+							],
+							[
+								700994,
+								700994
+							],
+							[
+								701278,
+								701278
+							],
+							[
+								701560,
+								701560
+							],
+							[
+								701850,
+								701850
+							],
+							[
+								702140,
+								702140
+							],
+							[
+								702440,
+								702440
+							],
+							[
+								702713,
+								702713
+							],
+							[
+								702975,
+								702975
+							],
+							[
+								703261,
+								703261
+							],
+							[
+								703554,
+								703554
+							],
+							[
+								703812,
+								703812
+							],
+							[
+								704088,
+								704088
+							],
+							[
+								704383,
+								704383
+							],
+							[
+								704659,
+								704659
+							],
+							[
+								704949,
+								704949
+							],
+							[
+								705230,
+								705230
+							],
+							[
+								705510,
+								705510
+							],
+							[
+								705788,
+								705788
+							],
+							[
+								706087,
+								706087
+							],
+							[
+								706765,
+								706765
+							],
+							[
+								707025,
+								707025
+							],
+							[
+								707305,
+								707305
+							],
+							[
+								707585,
+								707585
+							],
+							[
+								707865,
+								707865
+							],
+							[
+								708145,
+								708145
+							],
+							[
+								708425,
+								708425
+							],
+							[
+								708707,
+								708707
+							],
+							[
+								708990,
+								708990
+							],
+							[
+								709284,
+								709284
+							]
+						],
+						"settings":
+						{
+							"auto_name": "-- phpMyAdmin SQL Dump",
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1220.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "wp-content/themes/shark/footer.php",
+					"settings":
+					{
+						"buffer_size": 2351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "wp-content/themes/shark/front-page.php",
+					"settings":
+					{
+						"buffer_size": 1204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "wp-content/themes/shark/template-enlightenment.php",
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
